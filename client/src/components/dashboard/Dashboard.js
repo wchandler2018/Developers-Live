@@ -53,7 +53,7 @@ onDeleteClick(e){
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4">Dashboard</h1>
+              <h1 className="display-4 text-center mb-5 mt-3">Dashboard</h1>
               {dashboardContent}
             </div>
           </div>

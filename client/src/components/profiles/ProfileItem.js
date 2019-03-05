@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom"
 import isEmpty from "../../validation/isEmpty"
-import { spawn } from 'child_process';
+
 
  class ProfileItem extends Component {
   render() {
@@ -21,9 +21,9 @@ import { spawn } from 'child_process';
             </div>
             <div className="col-md-4 d-none d-md-block">
                 <h4>Skill Set</h4>
-                <ul className="list-group">
+                <ul className="list-group ">
                     {profile.skills.slice(0, 4).map((skill, index) => (
-                        <li key={index} className="list-group-item">
+                        <li key={index} className="skills-card list-group-item">
                            <i className="fa fa-check pr-1"/>{skill}
                         </li>
                     ))}
