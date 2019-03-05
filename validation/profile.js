@@ -60,12 +60,6 @@ module.exports = function validateProfileInput(data) {
     }
   }
 
-  if (!isEmpty(data.dribble)) {
-    if (!Validator.isURL(data.dribble)) {
-      errors.dribble = 'Not a valid URL';
-    }
-  }
-
   return {
     errors,
     isValid: isEmpty(errors)
